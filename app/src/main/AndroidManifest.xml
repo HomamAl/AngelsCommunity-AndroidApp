@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".charityDescriptions"></activity>
+        <activity android:name=".CharitiesListView" />
+        <activity android:name=".Database_Insert_Delete.DatabaseEdit" />
+        <activity android:name=".Database_Insert_Delete.ListViewContent" />
+        <activity android:name=".Database_Insert_Delete.DatabaseMain" />
+        <activity android:name=".Database_Insert_Delete.HelpDatabase" />
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".EmailVerify" />
+        <activity android:name=".RegPage" />
+        <activity android:name=".LoginActivity2" />
+        <activity android:name=".Rbl"/>
+        <activity android:name=".Mmcs" />
+        <activity android:name=".Cruk" />
+        <activity android:name=".Brc" />
+        <activity android:name=".Bhf" />
+
+        <activity android:name=".IntroActivity"></activity>
+        <activity android:name=".ChangePassword"/>
+        <activity android:name=".AddCard" />
+        <activity android:name=".ProfilePage" />
+        <activity android:name=".UpdateInfo" />
+        <activity android:name=".DonateActivity" />
+        <activity android:name=".Badges" android:exported="true"/>
+        <activity android:name=".Charitieslist" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".UserLocationMap" />
+       <activity android:name=".Main2Activity"/>
+        <activity android:name=".Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+        </activity>
+        <activity android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="com.example.braintree.braintree" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+
+</manifest>

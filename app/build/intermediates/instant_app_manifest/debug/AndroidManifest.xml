@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.example.user.MyApplication"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.user.charityDescriptions" />
+        <activity android:name="com.example.user.CharitiesListView" />
+        <activity android:name="com.example.user.Database_Insert_Delete.DatabaseEdit" />
+        <activity android:name="com.example.user.Database_Insert_Delete.ListViewContent" />
+        <activity android:name="com.example.user.Database_Insert_Delete.DatabaseMain" />
+        <activity android:name="com.example.user.Database_Insert_Delete.HelpDatabase" />
+        <activity android:name="com.example.user.MainActivity" />
+        <activity android:name="com.example.user.CalendarActivity" />
+        <activity android:name="com.example.user.HomeActivity" />
+        <activity android:name="com.example.user.EmailVerify" />
+        <activity android:name="com.example.user.RegPage" />
+        <activity android:name="com.example.user.LoginActivity2" />
+        <activity android:name="com.example.user.Rbl" />
+        <activity android:name="com.example.user.Mmcs" />
+        <activity android:name="com.example.user.Cruk" />
+        <activity android:name="com.example.user.Brc" />
+        <activity android:name="com.example.user.Bhf" />
+        <activity android:name="com.example.user.IntroActivity" />
+        <activity android:name="com.example.user.ChangePassword" />
+        <activity android:name="com.example.user.AddCard" />
+        <activity android:name="com.example.user.ProfilePage" />
+        <activity android:name="com.example.user.UpdateInfo" />
+        <activity android:name="com.example.user.DonateActivity" />
+        <activity
+            android:name="com.example.user.Badges"
+            android:exported="true" />
+        <activity android:name="com.example.user.Charitieslist" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name="com.example.user.UserLocationMap" />
+        <activity android:name="com.example.user.Main2Activity" />
+        <activity android:name="com.example.user.Splashscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="preloaded_fonts"
+                android:resource="@array/preloaded_fonts" />
+        </activity>
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="com.example.braintree.braintree" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.braintreepayments.api.threedsecure.ThreeDSecureWebViewActivity"
+            android:theme="@style/bt_three_d_secure_theme" />
+        <activity
+            android:name="com.braintreepayments.api.dropin.DropInActivity"
+            android:theme="@style/bt_drop_in_activity_theme" />
+        <activity
+            android:name="com.braintreepayments.api.dropin.AddCardActivity"
+            android:theme="@style/bt_add_card_activity_theme" />
+        <activity
+            android:name="com.braintreepayments.api.dropin.VaultManagerActivity"
+            android:theme="@style/bt_vault_manager_activity_theme" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.braintreepayments.api.AndroidPayActivity"
+            android:theme="@style/bt_transparent_activity" />
+        <activity
+            android:name="com.braintreepayments.api.GooglePaymentActivity"
+            android:theme="@style/bt_transparent_activity" />
+
+        <service android:name="com.braintreepayments.api.internal.AnalyticsIntentService" />
+    </application>
+
+</manifest>

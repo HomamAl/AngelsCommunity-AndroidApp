@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#49BEFF</color>
+    <color name="colorPrimaryDark">#65DCE5</color>
+    <color name="colorAccent">#0D5D98</color>
+
+    //my own styles
+
+    <color name="themeColor">#11CFC5</color>
+
+    <color name="contentTextColor">#020000</color>
+    <color name="darkTextColor">#020000</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorTextHint">#51d8c7</color>
+
+    <color name="whiteTextColor">#fff</color>
+    <color name="primaryTextColor">#11CFC5</color>
+    <color name="reg_bg_color">#11CFC5</color>
+    <color name="login_bg_color">#fff</color>
+    //
+
+    <color name="color1">#2F7092</color>
+    <color name="color2">#00e5ff</color>
+    <color name="color3">#00d2ff</color>
+    <color name="color4">#00c3ff</color>
+    <color name="color5">#2F7092</color>
+    <color name="color6">#2F7092</color>
+    <color name="color7">#2F7092</color>
+    <color name="color8">#FFFFFF</color>
+    <color name="color9">#2F7092</color>
+
+    <color name="color10">#B0C4DE</color>
+
+    <color name="gold">#B0C4DE</color>
+
+    //Alicia's Colours
+    <color name="colorPrimary1">#ffffff</color>
+    <color name="colorPrimaryDark1">#ffffff</color>
+    <color name="colorAccent1">#ffffff</color>
+
+    <!-- colours for button style -->
+    <color name="gradient_start_colour">#4c84ff</color>
+    <color name="gradient_end_colour">#18a3fe</color>
+
+    <!-- colours for tab and screen text style -->
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_colour">#000000</color>
+    <color name="intro_decription_colour">#656565</color>
+
+    <color name="tab_indicator_cyan">#0094FF</color>
+    <color name="tab_indicator_dark_cyan">#0050FF</color>
+
+
+
+
+
+
+
+</resources>

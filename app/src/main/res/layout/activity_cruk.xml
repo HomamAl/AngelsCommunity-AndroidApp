@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cruk"
+    android:background="@color/color4"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="315dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="355dp"
+            android:background="@color/color8"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="57dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/commu_logo" />
+
+            <ImageView
+                android:layout_width="113dp"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/cancerresearchuk" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="Cancer Research UK"
+                android:textColor="#ff212121"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="320dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="0">
+
+                <TextView
+                    android:layout_width="320dp"
+                    android:layout_height="wrap_content"
+                    android:text="Our research is beating cancer Thanks to supporters like you, our pioneering work into the prevention, diagnosis and treatment of cancer has helped save millions of lives. Over the past 40 years survival has doubled, thanks to the great progress research has made. We fund scientists, doctors and nurses to help beat cancer sooner."
+                    android:textColor="#ff212121"
+                    android:textSize="14dp" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="46dp"
+            android:src="@drawable/emailcontactus" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="supporter.services@cancer.org.uk"
+            android:textColor="#ff212121">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="46dp"
+            android:src="@drawable/phonecontactus" />
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:text="0300 123"
+            android:textColor="#ff212121">
+        </TextView>
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btndonate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3B595EE7"
+        android:textColor="#ff212121"
+        android:onClick="donate"
+        android:text="Donate"/>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnvolunteer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3B595EE7"
+        android:textColor="#ff212121"
+        android:onClick="volunteer"
+        android:text="volunteer"
+        />
+
+</LinearLayout>

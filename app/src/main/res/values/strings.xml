@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">User</string>
+    <string name="prefLoginState">loginstate</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Full name</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registered?</string>
+    <string name="welcome">Welcome</string>
+    <string name="logout">logout</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+
+        <string name="donations">Donations</string>
+        <string name="choose_the_amount_to_donate">Choose the amount to donate</string>
+        <string name="donate">Donate</string>
+    <string name="backbtn"><![CDATA[<]]></string>
+
+</resources>
